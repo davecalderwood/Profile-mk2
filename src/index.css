@@ -10,6 +10,7 @@ body {
 
 code {
   font-family: 'Times New Roman', Times, serif;
+  /* fonts for the site */
 }
 
 ol,
@@ -34,7 +35,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/***End REset CSS*/
+/*End REset CSS*/
 
 body {
   font: normal 14px/20px 'Open Sans', sans-serif;
@@ -43,18 +44,29 @@ body {
 }
 
 .main {
+  /* parameters for the main body portion of the site */
   max-width: 625px;
-  min-height: 450px;
-  max-height: 450px;
+  min-height: 500px;
+  max-height: 500px;
   margin: 100px auto;
   border-radius: 3px;
   position: relative;
   overflow: hidden;
-  background-color: lightgray;
-  /* background: url('Photos/MtHoodV.jpg'); */
+  /* background-color: lightgray; */
+  /* background-image: url('MtHoodV.jpg') cover no-repeat; */
+  /* width: 625px;
+  height: 500px; */
+  border: 1px solid red;
+}
+
+.image {
+    /* background-image: url('MtHoodV.jpg') cover no-repeat;
+    height: 200px;
+    width:200px; */
 }
 
 .menu-right {
+  /* all of the menu-right parameters to describe the values for the right side menu tabs */
   top: 0;
   right: 0;
   z-index: 1;
@@ -69,13 +81,14 @@ body {
 .footer a {
   display: block;
   text-align: center;
-  padding: 47px 28px;
+  padding: 48px 28px;
   line-height: 30px;
   color: #B7B7B7;
 }
 
 .menu-right a span,
 .footer a span {
+  /* Sets the footer tabs settings and values, ie. font uppercase, size and weight */
   display: block;
   text-transform: uppercase;
   font-size: 14px;
@@ -108,6 +121,7 @@ a.active:after {
 }
 
 .avatar {
+  /* The avatar class defines the photo and nametag for the html page */
   margin-right: 100px;
   text-align: center;
   display: block;
@@ -115,13 +129,14 @@ a.active:after {
 }
 
 .avatar img {
+  /* Specifically css for the front image of the avatar class */
   height: 150px;
   padding: 5px;
   background: #fff;
   border-radius: 50%;
 }
 
-.bubble {
+.bubbles {
   background: #fff;
   display: block;
   width: 42%;
@@ -134,7 +149,7 @@ a.active:after {
   position: relative;
 }
 
-.bubble:after {
+.bubbles:after {
   content: '';
   top: -70px;
   left: 45%;
@@ -146,14 +161,14 @@ a.active:after {
   border-bottom: 7px solid #fff;
 }
 
-.bubble h3 {
+.bubbles h3 {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   text-transform: uppercase;
 }
 
-.bubble a {
+.bubbles a {
   color: #888;
   font-size: 12px;
   font-style: italic;
@@ -201,4 +216,3 @@ a.active:after {
 .skills.open {
   display: block;
 }
-/*skill bar*/

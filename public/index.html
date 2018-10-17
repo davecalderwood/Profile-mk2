@@ -1,89 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-      <div class="main">
-          <div class="menu-right">
-            <a  class="active" href="#profile"><i class="fa fa-user"></i><span>Profile</span></a>
-            <a href="#project"><i class="fa fa-photo"></i><span>Projects</span></a>
-            <a  href="#skills"><i class="fa fa-folder"></i><span>Skills</span></a>
-          </div>
-        <div class="content">
-        <div class="profile open animated zoomIn">
-          <div class="avatar">
-            <img src="Waterski.jpg">
-            <div class="bubble">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <title>React App</title>
+  <!-- <script type = "text/javascript" src = "vue.min.js"></script> -->
+</head>
+
+<body>
+  <!-- <script src="./index.js"></script>
+  <script src="./Home.js"></script> -->
+
+  <!-- Main -->
+  <div class="main">
+    <div class="menu-right">
+      <!-- Creating the menu-right will assign items to the rights side with tags that will change the page to my Profile/Projects/Skills -->
+      <a class="active" href="#profile"><i class="fa fa-user"></i><span>Profile</span></a>
+      <a href="#project"><i class="fa fa-photo"></i><span>Projects and Skills</span></a>
+      <a href="#skills"><i class="fa fa-folder"></i><span>About</span></a>
+      <!-- <a href="#disclaimer"><i class ="disclaimer"></i><span>Disclaimer</span></a> -->
+    </div>
+    <div class="content">
+      <div class="profile open animated zoomIn">
+        <div class="avatar">
+          <img src="Waterski.jpg">
+          <!-- Put my photo in the middle with text underneath -->
+          <div class="bubbles">
             <h3>Dave Calderwood</h3>
-            <h4>davidhcalderwood@gmail.com</h4>
             <a href="#"></a>
-            </div>
-          
-          </div>
-        </div>	
-        <div class="project animated zoomIn">
-             <div class="avatar">
-             
-            <div class="bubble">
-            <h3>Coming Soon</h3>
-            <a href="#">View Details </a>
-            
-            </div>
-          
           </div>
         </div>
-        
+        <div class="project animated zoomIn">
+          <div class="avatar">
+            <div class="bubbles">
+              <h3>Coming Soon</h3>
+              <a href="#">View Details </a>
+
+            </div>
+
+          </div>
+        </div>
         <div class="skills animated zoomIn">
           <div class="avatar">
-             
-            <div class="bubble">
-            <h3>Coming Soon</h3>
-            <a href="#">View Details </a>
-            
+
+            <div class="bubbles">
+              <h3>Coming Soon</h3>
+              <a href="#">View Details </a>
+
             </div>
-          
+
           </div>
         </div>
-        </div><!--End Content-->
-         <div class="footer">
-         <a href="https://github.com/davecalderwood" target="_blank"><i class="fa fa-link"></i><span>Website</span></a>
-            <a href="https://github.com/davecalderwood"  target="_blank"><i class="fa fa-codepen"></i><span>Linkedin</span></a>
-            <a href="https://github.com/davecalderwood"  target="_blank"><i class="fa fa-twitter"></i><span>Github</span></a>
-            <a href="mailto:davidhcalderwood@gmail.com"  target="_blank"><i class="fa fa-briefcase"></i><span>Contact</span></a>
-         </div>
-         </div>
+      </div>
+      <!-- Links to email me, with other links to github etc. -->
+      <div class="footer">
+        <a href="https://github.com/davecalderwood" target="_blank"><i class="fa fa-link"></i><span>Website</span></a>
+        <a href="https://www.linkedin.com/in/david-calderwood-ba8b19172/" target="_blank"><i class="fa fa-codepen"></i><span>Linkedin</span></a>
+        <a href="https://github.com/davecalderwood" target="_blank"><i class="fa fa-github"></i><span>Github</span></a>
+        <a href="mailto:davidhcalderwood@gmail.com" target="_blank"><i class="fa fa-contact"></i><span>Contact</span></a>
+      </div>
+    </div>
+    </div>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>
